@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" type="image/png" href="img/icon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Albert Tafalla | Portfolio</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <a class="nav__link" href="index.html">
+          <img
+            src="img/icon.png"
+            alt="Bankist logo"
+            class="nav__logo"
+            id="logo"
+            data-version-number="3.0"
+        /></a>
+        <ul class="nav__links">
+          <li class="nav__item">
+            <a class="nav__link" href="#section--1">Projects</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#section--2">Skills</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#section--3">Background</a>
+          </li>
+          <li class="nav__item">
+            <!-- <a class="nav__link nav__link--btn btn--show-modal" href="#"
+              >Open account</a
+            > -->
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header__title" id="header">
+        <h1>
+          Hi! I am
+          <!-- Green highlight effect -->
+          <span class="highlight">Albert</span>
+          <br />
+          <span class="highlight">Daniel Tafalla</span>
+        </h1>
+        <h4>A web developer.</h4>
+        <button class="btn--text btn--scroll-to">
+          My projects &DownArrow;
+        </button>
+        <img src="img/sample.png" class="header__img" alt="Albert Picture" />
+      </div>
+    </header>
+
+    <section class="section" id="section--1">
+      <div class="section__title section__title--testimonials">
+        <h2 class="section__description">View my work!</h2>
+        <h3 class="section__header">Projects Portfolio</h3>
+      </div>
+
+      <div class="slider">
+        <div class="slide">
+          <a target="_blank" href="https://albert-maptivity.netlify.app/">
+            <img src="img/maptivity.jpg" alt="MapTivity" />
+          </a>
+          <p class="slide-description">
+            MapTivity. An activity mapping web app using Geolocation and
+            Leaftlet API.
+          </p>
+        </div>
+        <div class="slide">
+          <a target="_blank" href="https://albert-pig-game.netlify.app/">
+            <img src="img/pig-game.jpg" alt="Pig Game"
+          /></a>
+          <p class="slide-description">
+            Pig Game. Built with DOM Manipulation.
+          </p>
+        </div>
+        <div class="slide">
+          <a> <img src="img/ricemill.jpg" alt="College Thesis" /></a>
+          <p class="slide-description">
+            Design and Development of an Automated Rice Milling Machine.
+            Undergraduate thesis.
+          </p>
+        </div>
+        <div class="slide">
+          <a
+            target="_blank"
+            href="https://sample-arduino-documentation.netlify.app/"
+          >
+            <img
+              src="img/tecdoc.jpg"
+              alt="Technical Documentation Page for Arduino"
+          /></a>
+          <p class="slide-description">
+            Sample Technical Documentation built with Responsive Web Design.
+          </p>
+        </div>
+        <button class="slider__btn slider__btn--left">&larr;</button>
+        <button class="slider__btn slider__btn--right">&rarr;</button>
+        <div class="dots"></div>
+      </div>
+      <button class="btn--text btn--project btn--show-modal">See more</button>
+    </section>
+
+    <section class="section" id="section--2">
+      <div class="section__title">
+        <h2 class="section__description">Skills</h2>
+        <h3 class="section__header">
+          The skills, tools, and technologies I use:
+        </h3>
+      </div>
+
+      <div class="operations">
+        <div class="operations__tab-container">
+          <button
+            class="btn operations__tab operations__tab--1 operations__tab--active"
+            data-tab="1"
+          >
+            <span>01</span>Front-end Development
+          </button>
+          <button class="btn operations__tab operations__tab--2" data-tab="2">
+            <span>02</span>Responsive Web Design
+          </button>
+          <button class="btn operations__tab operations__tab--3" data-tab="3">
+            <span>03</span>Hardware Programming
+          </button>
+        </div>
+        <div
+          class="operations__content operations__content--1 operations__content--active"
+        >
+          <div class="operations__icon operations__icon--1">
+            <i class="fa-brands fa-js"></i>
+          </div>
+          <h5 class="operations__header">
+            Bringing Websites to Life with JavaScript.
+          </h5>
+          <p>
+            Proficient in JavaScript with a strong focus on writing modular,
+            reusable JavaScript code using OOP paradigms, handling asynchronous
+            operations seamlessly with Promises and Async/Await, and utilizing
+            ES6+ enhancements for improved performance and maintainability.
+          </p>
+        </div>
+
+        <div class="operations__content operations__content--2">
+          <div class="operations__icon operations__icon--2">
+            <i class="fa-brands fa-css3-alt"></i>
+          </div>
+          <h5 class="operations__header">
+            Crafting Seamless Experiences Across All Devices.
+          </h5>
+          <p>
+            Skilled in mobile-first, responsive web design using CSS Flexbox,
+            Grid, and media queries to create fluid, user-friendly layouts.
+            Experienced in scalable typography, adaptive images, and performance
+            optimization to ensure fast, accessible, and visually appealing
+            websites across all devices.
+          </p>
+        </div>
+        <div class="operations__content operations__content--3">
+          <div class="operations__icon operations__icon--3">
+            <i class="fa-solid fa-microchip"></i>
+          </div>
+          <h5 class="operations__header">
+            Innovative Prototyping & Automation with Arduino
+          </h5>
+          <p>
+            Developed interactive prototypes and smart systems using Arduino,
+            focusing on hardware programming, sensor integration, and automation
+            for embedded and IoT applications. Also served as an instructor and
+            trainer, teaching Arduino-based development and hands-on circuit
+            design to students and co-teachers.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="section--3">
+      <div class="section__title">
+        <h2 class="section__description">Timeline</h2>
+        <h3 class="section__header">Professional and Educational Background</h3>
+      </div>
+
+      <div class="features">
+        <img
+          src="img/teacher.jpg"
+          alt="Computer"
+          class="features__img lazy-img"
+        />
+        <div class="features__feature">
+          <div class="features__icon">
+            <i class="fa-solid fa-chalkboard-user"></i>
+          </div>
+          <h5 class="features__header">Special Science Teacher I</h5>
+          <p>
+            Taught Arduino programming and embedded systems, guiding students
+            through hands-on circuit design, sensor integration, and automation
+            projects. Developed and delivered lessons on microcontroller
+            programming, hardware interfacing, and IoT applications, fostering
+            practical skills and problem-solving abilities.
+          </p>
+        </div>
+
+        <div class="features__feature">
+          <div class="features__icon">
+            <i class="fa-solid fa-graduation-cap"></i>
+          </div>
+          <h5 class="features__header">Computer Engineering Graduate</h5>
+          <p>
+            Computer Engineering graduate and former
+            <strong>DOST Scholar</strong> with a strong foundation in hardware
+            and software development. Experienced in embedded systems, Arduino
+            programming, and web development, with a passion for innovation and
+            problem-solving.
+          </p>
+        </div>
+        <img src="img/college.jpg" alt="Plant" class="features__img lazy-img" />
+
+        <img
+          src="img/osp.jpg"
+          alt="Credit card"
+          class="features__img lazy-img"
+        />
+        <div class="features__feature">
+          <div class="features__icon">
+            <i class="fa-solid fa-ethernet"></i>
+          </div>
+          <h5 class="features__header">OSP Design Intern</h5>
+          <p>
+            Assisted in the design and planning of outside plant infrastructure
+            for telecommunications projects, ensuring compliance with industry
+            standards and collaborated with senior engineers to create detailed
+            engineering drawings and plans using CAD software.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--sign-up">
+      <div class="section__title">
+        <h3 class="section__header">
+          Thank you for taking the time and interest in me. Reach me in the
+          links down below.
+        </h3>
+      </div>
+      <!-- <button class="btn btn--show-modal">Open your free account today!</button> -->
+    </section>
+
+    <footer class="footer">
+      <ul class="footer__nav">
+        <li class="footer__item">
+          <i class="fa-brands fa-facebook"></i>
+          <a
+            class="footer__link"
+            target="_blank"
+            href="https://www.facebook.com/albertbtafalla/"
+          >
+            Facebook</a
+          >
+        </li>
+        <li class="footer__item">
+          <i class="fa-brands fa-linkedin"></i>
+          <a
+            class="footer__link"
+            target="_blank"
+            href="https://www.linkedin.com/in/albert-daniel-tafalla-8a1133337/"
+          >
+            LinkedIn</a
+          >
+        </li>
+        <li class="footer__item">
+          <i class="fa-solid fa-at"></i>
+          <a
+            class="footer__link"
+            target="_blank"
+            href="mailto:albertdaniel.tafalla@gmail.com"
+          >
+            Email me</a
+          >
+        </li>
+        <!-- <li class="footer__item">
+          <a class="footer__link" href="#">Privacy Policy</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Careers</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Blog</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Contact Us</a>
+        </li> -->
+      </ul>
+      <p class="footer__copyright">Albert Tafalla | 2025</p>
+    </footer>
+
+    <div class="modal hidden">
+      <h3 class="section__header">Here are more projects that I worked on</h3>
+      <button class="btn--close-modal">&times;</button>
+      <div class="gallery">
+        <div>
+          <a target="_blank" href="https://albert-forkify-project.netlify.app/">
+            <img src="img/forkify.jpg" alt="Forkify"
+          /></a>
+          <p class="project-description">Forkify</p>
+        </div>
+        <div>
+          <a target="_blank" href="https://albert-maptivity.netlify.app/">
+            <img src="img/maptivity.jpg" alt="MapTivity"
+          /></a>
+          <p class="project-description">MapTivity</p>
+        </div>
+        <div>
+          <a target="_blank" href="https://albert-pig-game.netlify.app/">
+            <img src="img/pig-game.jpg" alt="Pig Game"
+          /></a>
+          <p class="project-description">Pig Game</p>
+        </div>
+        <div>
+          <a target="_blank" href="https://albert-guess-my-num.netlify.app/">
+            <img src="img/guessmynum.jpg" alt="Guess My Number"
+          /></a>
+          <p class="project-description">Guess My Number</p>
+        </div>
+        <div>
+          <a target="_blank" href="https://spidey-tribute.netlify.app/">
+            <img src="img/spidey.jpg" alt="Tribute Page"
+          /></a>
+          <p class="project-description">Tribute Page</p>
+        </div>
+        <div>
+          <a
+            target="_blank"
+            href="https://sample-arduino-documentation.netlify.app/"
+          >
+            <img
+              src="img/tecdoc.jpg"
+              alt="Technical Documentation Page for Arduino"
+          /></a>
+          <p class="project-description">Arduino Documentation</p>
+        </div>
+      </div>
+    </div>
+    <div class="overlay hidden"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
