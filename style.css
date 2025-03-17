@@ -627,6 +627,31 @@ h4 {
   .gallery img {
     max-width: 350px;
   }
+  .features {
+    margin: 0 5rem;
+  }
+  .third {
+    order: 4;
+  }
+  .fourth {
+    order: 3;
+  }
+  .fifth {
+    order: 5;
+  }
+  .sixth {
+    order: 6;
+  }
+  .features__icon {
+    display: inline-block;
+    text-align: center;
+    align-items: center;
+  }
+
+  i {
+    position: relative;
+    top: 15%;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -676,12 +701,13 @@ h4 {
     width: 100%;
   }
 
-  .slider {
-    height: auto;
-  }
+  /* .slider {
+    top: -100%;
+  } */
 
   .slide {
-    height: auto;
+    width: auto;
+    top: -20%;
   }
 }
 
